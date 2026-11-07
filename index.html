@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#09090b" />
+  <meta name="description" content="THE AA UNIVERSE — an independent fan-made archive celebrating Allu Arjun's films, style, dance, milestones and worldwide fan community." />
+  <title>THE AA UNIVERSE — An Allu Arjun Fan Universe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="The AA Universe home"><span class="brand-mark">AA</span><span>THE <b>AA UNIVERSE</b></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#legacy">LEGACY</a><a href="#filmography">FILMS</a><a href="#style">STYLE</a>
+      <a href="#milestones">MILESTONES</a><a href="#fanverse">FANVERSE</a>
+    </nav>
+    <a class="top-cta" href="#fanverse">ENTER FANVERSE <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> AN INDEPENDENT FAN TRIBUTE • EST. 2026</p>
+        <h1>ONE ICON.<br><span>INFINITE</span><br>UNIVERSE.</h1>
+        <p class="hero-sub">A living archive of the performances, style, dance and moments that made <strong>Allu Arjun</strong> an icon to millions.</p>
+        <div class="hero-actions"><a class="btn btn-red" href="#filmography">EXPLORE THE FILMS <span>↗</span></a><a class="text-link" href="#legacy">DISCOVER THE LEGACY <span>↓</span></a></div>
+        <div class="hero-stats">
+          <div><strong>2<span>+</span></strong><small>DECADES ON SCREEN</small></div>
+          <i></i><div><strong>20<span>+</span></strong><small>FEATURED FILMS*</small></div><i></i><div><strong>1</strong><small>GLOBAL FANVERSE</small></div>
+        </div>
+        <small class="fineprint">*Starter film archive; expand and fact-check before public launch.</small>
+      </div>
+      <div class="hero-art">
+        <div class="hero-frame">
+          <div class="frame-label">THE ICON / VOL. 01</div>
+          <div class="portrait-placeholder">
+            <div class="portrait-glow"></div><div class="portrait-monogram">AA</div>
+            <span class="portrait-caption">YOUR HERO IMAGE GOES HERE</span>
+          </div>
+          <div class="frame-bottom"><span>ICON STAR</span><span>ALLU ARJUN</span></div>
+        </div>
+        <div class="floating-tag tag-top">STYLE<br><b>REDEFINED</b></div>
+        <div class="floating-tag tag-bottom"><b>THE</b> JOURNEY<br>CONTINUES <span>✦</span></div>
+      </div>
+      <div class="hero-scroll">SCROLL TO EXPLORE <span>↓</span></div>
+      <div class="hero-index">01 / 05</div>
+    </section>
+
+    <section class="ticker" aria-label="Fan tribute ticker"><div class="ticker-track"><span>ICON STAR</span> ✦ <span>STYLE ICON</span> ✦ <span>PERFORMANCE</span> ✦ <span>PASSION</span> ✦ <span>THE AA UNIVERSE</span> ✦ <span>ICON STAR</span> ✦ <span>STYLE ICON</span> ✦ <span>PERFORMANCE</span> ✦</div></section>
+
+    <section class="section intro-section" id="legacy">
+      <div class="section-kicker">01 / THE LEGACY</div>
+      <div class="intro-grid">
+        <div><p class="overline">MORE THAN A SCREEN PRESENCE</p><h2>A JOURNEY<br>BUILT ON <em>PASSION.</em></h2></div>
+        <div class="intro-text"><p>From early Telugu cinema roles to larger-than-life characters that travelled across languages and borders, this space celebrates the craft, evolution and cultural impact of Allu Arjun.</p><p class="muted">Explore the films, the transformations, the dance, the awards and the moments fans keep close. This is a fan-made tribute—not an official website.</p><a class="underlink" href="#milestones">TRACE THE JOURNEY <span>↗</span></a></div>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-red"><span class="feature-no">A / 01</span><div class="feature-symbol">✦</div><h3>THE<br>PERFORMER</h3><p>Character, commitment and screen presence.</p></article>
+        <article class="feature-card feature-image"><span class="feature-no">A / 02</span><div class="feature-symbol">↗</div><h3>THE<br>STYLE ICON</h3><p>Looks that became signature moments.</p></article>
+        <article class="feature-card feature-gold"><span class="feature-no">A / 03</span><div class="feature-symbol">♫</div><h3>THE<br>DANCER</h3><p>Rhythm, precision and unforgettable moves.</p></article>
+      </div>
+    </section>
+
+    <section class="section films-section" id="filmography">
+      <div class="section-heading"><div><div class="section-kicker">02 / THE FILM ARCHIVE</div><h2>EVERY ERA.<br><em>ONE ICON.</em></h2></div><p>A growing filmography, from debut to defining blockbusters. Select a title to open its archive card.</p></div>
+      <div class="film-controls"><label class="searchbox"><span>⌕</span><input id="filmSearch" type="search" placeholder="Search a film, year or genre..." /></label><div class="filter-row" id="filmFilters"><button class="filter active" data-filter="all">ALL ERAS</button><button class="filter" data-filter="2000s">2000s</button><button class="filter" data-filter="2010s">2010s</button><button class="filter" data-filter="2020s">2020s</button></div></div>
+      <div class="film-grid" id="filmGrid" aria-live="polite"></div>
+      <p class="archive-note">Film list is an editable starter dataset, not a verified exhaustive filmography. Check credits, release dates and classifications before publishing.</p>
+    </section>
+
+    <section class="quote-band">
+      <div class="quote-mark">“</div><blockquote>THE MAGIC IS IN THE<br><em>TRANSFORMATION.</em></blockquote><p>A FAN-MADE CELEBRATION OF THE CRAFT</p>
+    </section>
+
+    <section class="section style-section" id="style">
+      <div class="section-heading"><div><div class="section-kicker">03 / THE STYLE ARCHIVE</div><h2>EVERY LOOK.<br><em>AN ATTITUDE.</em></h2></div><p>Explore the visual eras, signature silhouettes and character transformations. Add licensed stills and editorial notes to build this archive.</p></div>
+      <div class="style-grid">
+        <article class="style-tile style-one"><span>01 / RUGGED</span><div><small>PUSHPA ERA</small><h3>RAW<br>INTENSITY</h3></div></article>
+        <article class="style-tile style-two"><span>02 / REFINED</span><div><small>URBAN CLASS</small><h3>EFFORTLESS<br>SWAG</h3></div></article>
+        <article class="style-tile style-three"><span>03 / EXPERIMENTAL</span><div><small>CHARACTER FIRST</small><h3>ALWAYS<br>EVOLVING</h3></div></article>
+      </div>
+    </section>
+
+    <section class="section milestones-section" id="milestones">
+      <div class="section-kicker">04 / THE TIMELINE</div><div class="section-heading"><h2>MOMENTS THAT<br><em>MADE HISTORY.</em></h2><p>A starting timeline of selected career milestones. Expand with sourced dates, award names and official references.</p></div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="section fan-section" id="fanverse">
+      <div class="fan-heading"><div><div class="section-kicker">05 / THE WORLDWIDE FANVERSE</div><h2>ONE LOVE.<br><em>NO BORDERS.</em></h2><p>Where fans meet, celebrate and add their voice to the universe.</p></div><div class="globe-art"><div class="globe">AA</div><span>FANS • EVERYWHERE</span></div></div>
+      <div class="fan-layout">
+        <div class="fan-form-wrap"><div class="form-head"><span>✦ FAN WALL</span><span class="live-pill">LOCAL DEMO</span></div><h3>LEAVE YOUR<br><em>MARK.</em></h3><p>Share a short message with the fan community. In this starter version, posts are saved only in this browser.</p>
+          <form id="fanForm"><label>Your display name<input id="fanName" maxlength="28" required placeholder="Your fan name" /></label><label>Your city / country<input id="fanLocation" maxlength="40" placeholder="e.g. Hyderabad, India" /></label><label>Your message<textarea id="fanMessage" maxlength="180" required placeholder="What does being an AA fan mean to you?"></textarea></label><button class="btn btn-red" type="submit">POST TO FAN WALL <span>↗</span></button></form>
+        </div>
+        <div class="fan-wall-wrap"><div class="wall-top"><h3>COMMUNITY VOICES</h3><span id="fanCount">0 POSTS</span></div><div id="fanWall" class="fan-wall"></div></div>
+      </div>
+      <div class="community-callout"><div><span class="overline">THE NEXT CHAPTER IS OURS</span><h3>THE UNIVERSE<br>GROWS WITH YOU.</h3></div><p>Want a real worldwide community with accounts, moderation and shared posts? Connect a secure backend before launch.</p></div>
+    </section>
+
+    <section class="section quiz-section">
+      <div class="quiz-copy"><div class="section-kicker">BONUS / FAN CHALLENGE</div><h2>HOW WELL DO<br>YOU KNOW <em>AA?</em></h2><p>Take the quick fan quiz and test your knowledge.</p></div>
+      <div class="quiz-card" id="quizCard"><div class="quiz-meta"><span>THE AA QUIZ</span><span id="quizProgress">01 / 03</span></div><h3 id="quizQuestion"></h3><div id="quizOptions" class="quiz-options"></div><p id="quizFeedback" class="quiz-feedback" aria-live="polite"></p><button id="quizNext" class="btn btn-outline" disabled>NEXT QUESTION →</button></div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-kicker">THIS IS ONLY THE BEGINNING</div><h2>WELCOME TO<br><span>THE AA UNIVERSE.</span></h2><a class="btn btn-light" href="#home">BACK TO THE TOP ↑</a><div class="closing-star">✦</div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">AA</span><span>THE <b>AA UNIVERSE</b></span></a><p>Independent fan-made tribute. Not affiliated with Allu Arjun or his representatives.</p><div><a href="#filmography">FILMS</a><a href="#fanverse">FANVERSE</a><a href="#home">BACK TO TOP ↑</a></div><small>© <span id="year"></span> THE AA UNIVERSE • BUILT BY FANS, WITH RESPECT.</small></footer>
+
+  <dialog id="filmDialog" class="film-dialog"><button class="dialog-close" id="dialogClose" aria-label="Close">×</button><div id="dialogContent"></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
