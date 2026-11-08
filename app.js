@@ -1,5 +1,5 @@
 const films = [
-  {title:"Gangotri",year:2003,genre:"Action / Drama",era:"2000s",tag:"DEBUT ERA",image:"posters/gangotri.jpg",colors:["#78323a","#1a1015"],note:"Allu Arjun's Telugu film debut. A foundational entry in the career archive."},
+  {title:"Gangotri",year:2003,genre:"Action / Drama",era:"2000s",tag:"DEBUT ERA",image:"gangotri.jpg",colors:["#78323a","#1a1015"],note:"Allu Arjun's Telugu film debut. A foundational entry in the career archive."},
   {title:"Arya",year:2004,genre:"Romance / Action",era:"2000s",tag:"BREAKTHROUGH",image:"posters/arya.jpg",colors:["#8d2533","#211018"],note:"A major early-career breakthrough remembered by Telugu cinema fans."},
   {title:"Bunny",year:2005,genre:"Action / Drama",era:"2000s",tag:"YOUTHFUL ENERGY",image:"posters/bunny.jpg",colors:["#31546b","#111923"],note:"An energetic action-drama from the early phase of his career."},
   {title:"Happy",year:2006,genre:"Romance / Comedy",era:"2000s",tag:"ROM-COM ERA",image:"posters/happy.jpg",colors:["#6c5b37","#17140f"],note:"A romantic comedy that added another shade to his screen persona."},
