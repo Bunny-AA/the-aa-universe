@@ -144,3 +144,74 @@ menuToggle.addEventListener("click",()=>{const open=nav.classList.toggle("open")
 nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");menuToggle.setAttribute("aria-expanded","false");}));
 nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");menuToggle.setAttribute("aria-expanded","false");}));
 
+/* AA FAN ZONE - CHARACTER POLL */
+
+const pollButtons = document.querySelectorAll(".poll-option");
+const pollMessage = document.getElementById("pollMessage");
+const pollResults = document.getElementById("pollResults");
+
+const pollCharacters = ["Pushpa Raj", "Bantu", "Gana", "Lucky"];
+
+let pollVotes = JSON.parse(
+  localStorage.getItem("aaPollVotes") || "{}"
+);
+
+let userVote = localStorage.getItem("aaUserVote");
+
+function showPollResults() {
+  const totalVotes = pollCharacters.reduce(
+    (sum, name) => sum + (pollVotes[name] || 0), 0
+  );
+
+  pollResults.innerHTML = pollCharacters.map(name => {
+    const votes = pollVotes[name] || 0;
+    const percentage = totalVotes
+      ? Math.round((votes / totalVotes) * 100)
+      : 0;
+
+    return `
+      <div class="poll-result">
+        <div class="poll-result-label">
+          <span>${name}</span>
+          <span>${percentage}%</span>
+        </div>
+        <div class="poll-bar">
+          <div class="poll-bar-fill" style="width:${percentage}%"></div>
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+pollButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    if (userVote) {
+      pollMessage.textContent = "You've already voted on this device!";
+      return;
+    }
+
+    const choice = button.dataset.vote;
+
+    pollVotes[choice] = (pollVotes[choice] || 0) + 1;
+
+    localStorage.setItem("aaPollVotes", JSON.stringify(pollVotes));
+    localStorage.setItem("aaUserVote", choice);
+
+    userVote = choice;
+
+    pollMessage.textContent = `Your vote for ${choice} has been saved! ❤️`;
+
+    pollButtons.forEach(btn => {
+      btn.disabled = true;
+    });
+
+    showPollResults();
+  });
+});
+
+if (userVote) {
+  pollMessage.textContent = `You voted for ${userVote}! ❤️`;
+  pollButtons.forEach(button => button.disabled = true);
+}
+
+showPollResults();
