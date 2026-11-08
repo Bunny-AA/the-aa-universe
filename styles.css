@@ -134,3 +134,52 @@
     margin-inline: auto;
   }
                               }
+/* FIT MOVIE POPUP ON ONE PHONE SCREEN */
+#filmDialog {
+  width: 92vw;
+  max-width: 650px;
+  max-height: calc(100dvh - 24px);
+  overflow: hidden;
+}
+
+#dialogContent {
+  overflow: hidden;
+}
+
+.movie-detail {
+  display: grid;
+  grid-template-columns: 34% 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.movie-detail-poster {
+  width: 100%;
+  max-height: 48vh;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.movie-detail-info {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.movie-detail-info h2 {
+  font-size: clamp(18px, 5vw, 28px);
+  margin: 6px 0;
+}
+
+.movie-detail-info p {
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 6px 0;
+}
+
+@media (max-width: 600px) {
+  .movie-detail {
+    grid-template-columns: 34% 1fr;
+    gap: 10px;
+  }
+  }
