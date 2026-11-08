@@ -40,9 +40,29 @@ function renderFilms(){
     card.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open();}});
   });
 }
-function showFilm(title){
-  const f=films.find(x=>x.title===title); if(!f)return;
-  document.getElementById("dialogContent").innerHTML=`<div class="dialog-year">${f.year} / ${f.tag}</div><h2 class="dialog-title">${f.title}</h2><p class="dialog-meta">${f.genre}<br><br>${f.note}</p><p class="dialog-disclaimer">Fan archive entry. Verify credits, synopsis and all production details against reliable sources before publication. Add licensed poster art and trailer links in the project data.</p>`;
+function showFilm(title) {
+  const f = films.find(x => x.title === title);
+  if (!f) return;
+
+  document.getElementById("dialogContent").innerHTML = `
+    <div class="movie-detail">
+      <img
+        class="movie-detail-poster"
+        src="${f.image}"
+        alt="${f.title} poster"
+      >
+      <div class="movie-detail-info">
+        <span class="dialog-year">${f.year} · ${f.tag}</span>
+        <h2 class="dialog-title">${f.title}</h2>
+        <p class="dialog-meta">${f.genre}</p>
+        <p>${f.note}</p>
+        <p class="dialog-disclaimer">
+          Unofficial fan archive entry.
+        </p>
+      </div>
+    </div>
+  `;
+
   document.getElementById("filmDialog").showModal();
 }
 document.getElementById("filmSearch").addEventListener("input",renderFilms);
