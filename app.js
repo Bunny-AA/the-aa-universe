@@ -10,7 +10,7 @@ const films = [
   {title:"Badrinath",year:2011,genre:"Action",era:"2010s",tag:"MYTHIC SCALE",image:"badrinath.jpg",colors:["#8a5d28","#1c140c"],note:"A large-scale action film with a distinctive visual world."},
   {title:"Julayi",year:2012,genre:"Action / Comedy",era:"2010s",tag:"SMART & STYLISH",image:"Julayi.jpg",colors:["#355d77","#101a24"],note:"A stylish action-comedy known for its witty tone."},
   {title:"Iddarammayilatho",year:2013,genre:"Romance / Action",era:"2010s",tag:"MUSICAL MOOD",image:"iddarammayilatho.jpg",colors:["#74435d","#1c101a"],note:"A romantic action entertainer."},
-  {title:"Race Gurram",year:2014,genre:"Action / Comedy",era:"2010s",tag:"BLOCKBUSTER ENERGY",image:"race-gurram.jpg",colors:["#8b3b22","#1b0e0b"],note:"A popular action-comedy and a major crowd-pleasing chapter."},
+  {title:"Race Gurram",year:2014,genre:"Action / Comedy",era:"2010s",tag:"BLOCKBUSTER ENERGY",image:"racegurram.jpg",colors:["#8b3b22","#1b0e0b"],note:"A popular action-comedy and a major crowd-pleasing chapter."},
   {title:"S/O Satyamurthy",year:2015,genre:"Family / Drama",era:"2010s",tag:"VALUES & FAMILY",image:"s-o-satyamurthy.jpg",colors:["#596a83","#111620"],note:"A family drama centred on values and responsibility."},
   {title:"Rudhramadevi",year:2015,genre:"Historical",era:"2010s",tag:"HISTORICAL EPIC",image:"rudhramadevi.jpg",colors:["#76512b","#1b120c"],note:"A historical film in which he appeared as Gona Ganna Reddy."},
   {title:"Sarrainodu",year:2016,genre:"Action",era:"2010s",tag:"MASS ACTION",image:"sarrainodu.jpg",colors:["#8d2525","#1b0c0d"],note:"A mass-action entertainer."},
