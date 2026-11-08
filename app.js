@@ -83,8 +83,16 @@ const milestones=[
   ["2021","Pushpa: The Rise","Pushpa Raj becomes a character recognised by audiences far beyond Telugu cinema."],
   ["2024","Pushpa 2: The Rule","The story continues on an even larger scale."]
 ];
-document.getElementById("timeline").innerHTML=milestones.map(([year,title,desc])=>`<article class="timeline-item"><div class="timeline-year">${year}</div><div><h3>${title}</h3><p>${desc}</p></div></article>`).join("");
-
+document.getElementById("timeline").innerHTML = milestones.map(([year, title, desc], index) => `
+  <article class="timeline-item">
+    <div class="timeline-year">${year}</div>
+    <div class="timeline-content">
+      <span class="timeline-number">CHAPTER ${String(index + 1).padStart(2, "0")}</span>
+      <h3>${title}</h3>
+      <p>${desc}</p>
+    </div>
+  </article>
+`).join("");
 const STORAGE_KEY="aa-universe-fan-posts-v1";
 function getPosts(){try{return JSON.parse(localStorage.getItem(STORAGE_KEY)||"[]")}catch{return []}}
 function renderPosts(){
