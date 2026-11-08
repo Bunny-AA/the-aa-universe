@@ -63,3 +63,28 @@
   border-radius: 4px;
   font-size: 12px;
 }
+/* BIGGER CINEMATIC MOVIE POSTERS */
+
+.film-poster {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  min-height: 260px;
+  overflow: hidden;
+}
+
+.film-poster img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.poster-year {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
