@@ -11,14 +11,14 @@ const films = [
   {title:"Julayi",year:2012,genre:"Action / Comedy",era:"2010s",tag:"SMART & STYLISH",image:"Julayi.jpg",colors:["#355d77","#101a24"],note:"A stylish action-comedy known for its witty tone."},
   {title:"Iddarammayilatho",year:2013,genre:"Romance / Action",era:"2010s",tag:"MUSICAL MOOD",image:"iddarammayilatho.jpg",colors:["#74435d","#1c101a"],note:"A romantic action entertainer."},
   {title:"Race Gurram",year:2014,genre:"Action / Comedy",era:"2010s",tag:"BLOCKBUSTER ENERGY",image:"racegurram.jpg",colors:["#8b3b22","#1b0e0b"],note:"A popular action-comedy and a major crowd-pleasing chapter."},
-  {title:"S/O Satyamurthy",year:2015,genre:"Family / Drama",era:"2010s",tag:"VALUES & FAMILY",image:"s-o-satyamurthy.jpg",colors:["#596a83","#111620"],note:"A family drama centred on values and responsibility."},
+  {title:"S/O Satyamurthy",year:2015,genre:"Family / Drama",era:"2010s",tag:"VALUES & FAMILY",image:"son of satyamurthy.jpg",colors:["#596a83","#111620"],note:"A family drama centred on values and responsibility."},
   {title:"Rudhramadevi",year:2015,genre:"Historical",era:"2010s",tag:"HISTORICAL EPIC",image:"rudhramadevi.jpg",colors:["#76512b","#1b120c"],note:"A historical film in which he appeared as Gona Ganna Reddy."},
-  {title:"Sarrainodu",year:2016,genre:"Action",era:"2010s",tag:"MASS ACTION",image:"sarrainodu.jpg",colors:["#8d2525","#1b0c0d"],note:"A mass-action entertainer."},
+  {title:"Sarrainodu",year:2016,genre:"Action",era:"2010s",tag:"MASS ACTION",image:"sarinodu.jpg",colors:["#8d2525","#1b0c0d"],note:"A mass-action entertainer."},
   {title:"Duvvada Jagannadham",year:2017,genre:"Action / Comedy",era:"2010s",tag:"DUAL SHADE",image:"DJ.jpg",colors:["#65765a","#131a12"],note:"A 2017 action-comedy featuring a contrasting character setup."},
-  {title:"Naa Peru Surya",year:2018,genre:"Action / Drama",era:"2010s",tag:"INTENSE CHARACTER",image:"naa-peru-surya.jpg",colors:["#73502e","#19120d"],note:"A character-driven action drama."},
+  {title:"Naa Peru Surya",year:2018,genre:"Action / Drama",era:"2010s",tag:"INTENSE CHARACTER",image:"naa peru surya naa illu India.jpg",colors:["#73502e","#19120d"],note:"A character-driven action drama."},
   {title:"Ala Vaikunthapurramuloo",year:2020,genre:"Family / Drama",era:"2020s",tag:"CULTURAL PHENOMENON",image:"alavaikunthapurramuloo.jpg",colors:["#547b7a","#0e1a1b"],note:"A major commercial success with widely celebrated music."},
-  {title:"Pushpa: The Rise",year:2021,genre:"Action / Drama",era:"2020s",tag:"A NEW PHENOMENON",image:"pushpa-the-rise.jpg",colors:["#a34824","#1d120c"],note:"The first chapter of Pushpa Raj's story, with a wide-reaching cultural impact."},
-  {title:"Pushpa 2: The Rule",year:2024,genre:"Action / Drama",era:"2020s",tag:"THE RULE",image:"pushpa-2.jpg",colors:["#8f1e22","#170b0d"],note:"The continuation of Pushpa Raj's story. Add verified production and release details here."}
+  {title:"Pushpa: The Rise",year:2021,genre:"Action / Drama",era:"2020s",tag:"A NEW PHENOMENON",image:"pushpa.jpg",colors:["#a34824","#1d120c"],note:"The first chapter of Pushpa Raj's story, with a wide-reaching cultural impact."},
+  {title:"Pushpa 2: The Rule",year:2024,genre:"Action / Drama",era:"2020s",tag:"THE RULE",image:"pushpa2.jpg",colors:["#8f1e22","#170b0d"],note:"The continuation of Pushpa Raj's story. Add verified production and release details here."}
 ];
 
 const filmGrid = document.getElementById("filmGrid");
