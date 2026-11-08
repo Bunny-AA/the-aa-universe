@@ -28,7 +28,10 @@ function renderFilms(){
   const shown = films.filter(f => (activeFilter==="all" || f.era===activeFilter) && `${f.title} ${f.year} ${f.genre} ${f.tag}`.toLowerCase().includes(q));
   filmGrid.innerHTML = shown.length ? shown.map((f) => `
     <article class="film-card" tabindex="0" role="button" aria-label="Open ${f.title} details" data-title="${f.title}">
-      <div class="film-poster" style="--c1:${f.colors[0]};--c2:${f.colors[1]}"><span class="poster-year">${f.year}</span><span class="poster-title">${f.title.replace(/: /g,":<br> ").replace(/ /g,"<br>")}</span></div>
+      <div class="film-poster" style="--c1:${f.colors[0]};--c2:${f.colors[1]}">
+  <img src="${f.image}" alt="${f.title} movie poster" loading="lazy">
+  <span class="poster-year">${f.year}</span>
+</div>
       <div class="film-info"><h3>${f.title}</h3><p>${f.genre} · ${f.tag}</p></div>
     </article>`).join("") : `<p class="empty-wall">No films match that search. Try another title or era.</p>`;
   filmGrid.querySelectorAll(".film-card").forEach(card=>{
