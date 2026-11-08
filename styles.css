@@ -104,3 +104,33 @@
   object-fit: cover !important;
   display: block !important;
   }
+/* CINEMATIC MOVIE DETAILS POPUP */
+.movie-detail {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.85fr) minmax(0, 1.15fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.movie-detail-poster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.movie-detail-info {
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .movie-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .movie-detail-poster {
+    max-width: 220px;
+    margin-inline: auto;
+  }
+                              }
