@@ -448,3 +448,87 @@
     padding: 15px;
   }
 }
+/* AA MUSIC & DANCE ZONE */
+
+.music-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.music-section .section-kicker {
+  color: #d6ad61;
+}
+
+.music-section .section-heading em {
+  color: #d6ad61;
+  font-style: normal;
+}
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 35px;
+}
+
+.music-card {
+  padding: 28px 22px;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: linear-gradient(145deg, #24180f, #0b0b0b);
+  border: 1px solid rgba(214, 173, 97, 0.3);
+  border-radius: 12px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.music-card:hover {
+  transform: translateY(-7px);
+  border-color: #d6ad61;
+}
+
+.music-icon {
+  font-size: 38px;
+  color: #d6ad61;
+  margin-bottom: 20px;
+}
+
+.music-card span {
+  color: #d6ad61;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.music-card h3 {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 29px;
+  margin-bottom: 22px;
+}
+
+.music-card a {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-bottom: 1px solid #d6ad61;
+  padding-bottom: 5px;
+}
+
+.music-card a:hover {
+  color: #d6ad61;
+}
+
+@media (max-width: 700px) {
+  .music-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .music-card {
+    min-height: 190px;
+  }
+}
