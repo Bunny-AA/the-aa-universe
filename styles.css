@@ -88,3 +88,19 @@
   left: 10px;
   z-index: 2;
 }
+.film-poster {
+  position: relative !important;
+  width: 100% !important;
+  aspect-ratio: 2 / 3 !important;
+  height: 380px !important;
+  overflow: hidden !important;
+}
+
+.film-poster img {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  }
