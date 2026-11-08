@@ -357,3 +357,94 @@
     height: 280px;
   }
   }
+/* CINEMATIC CAREER TIMELINE */
+
+.timeline {
+  position: relative;
+  margin-top: 40px;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 5px;
+  bottom: 5px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    #d6ad61,
+    #a51d2d,
+    transparent
+  );
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 20px;
+  padding: 0 0 35px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -27px;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d6ad61;
+  box-shadow: 0 0 14px rgba(214, 173, 97, 0.7);
+}
+
+.timeline-year {
+  color: #d6ad61;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: linear-gradient(135deg, #191919, #0c0c0c);
+  border: 1px solid rgba(214, 173, 97, 0.2);
+  border-radius: 10px;
+}
+
+.timeline-number {
+  color: #a51d2d;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.timeline-content h3 {
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 26px;
+  margin: 8px 0;
+}
+
+.timeline-content p {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .timeline-item {
+    grid-template-columns: 65px 1fr;
+    gap: 12px;
+  }
+
+  .timeline-year {
+    font-size: 20px;
+  }
+
+  .timeline-content {
+    padding: 15px;
+  }
+}
