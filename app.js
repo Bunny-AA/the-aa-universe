@@ -215,3 +215,71 @@ if (userVote) {
 }
 
 showPollResults();
+/* AA FAN BATTLE */
+
+const battleButtons = document.querySelectorAll(".battle-card");
+const battleMessage = document.getElementById("battleMessage");
+const battleResults = document.getElementById("battleResults");
+
+let battleVotes = JSON.parse(
+  localStorage.getItem("aaBattleVotes") || "{}"
+);
+
+let battleUserVote = localStorage.getItem("aaBattleUserVote");
+
+function showBattleResults() {
+  const characters = ["Pushpa Raj", "Bantu"];
+  const total = characters.reduce(
+    (sum, name) => sum + (battleVotes[name] || 0), 0
+  );
+
+  battleResults.innerHTML = characters.map(name => {
+    const votes = battleVotes[name] || 0;
+    const percent = total
+      ? Math.round((votes / total) * 100)
+      : 0;
+
+    return `
+      <div class="battle-result">
+        <div class="battle-result-label">
+          <span>${name}</span>
+          <span>${percent}%</span>
+        </div>
+        <div class="battle-bar">
+          <div class="battle-bar-fill" style="width:${percent}%"></div>
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+battleButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    if (battleUserVote) {
+      battleMessage.textContent = "You've already chosen your champion!";
+      return;
+    }
+
+    const choice = button.dataset.character;
+
+    battleVotes[choice] = (battleVotes[choice] || 0) + 1;
+
+    localStorage.setItem("aaBattleVotes", JSON.stringify(battleVotes));
+    localStorage.setItem("aaBattleUserVote", choice);
+
+    battleUserVote = choice;
+
+    battleMessage.textContent = `🔥 You chose ${choice}!`;
+
+    battleButtons.forEach(btn => btn.disabled = true);
+
+    showBattleResults();
+  });
+});
+
+if (battleUserVote) {
+  battleMessage.textContent = `Your champion: ${battleUserVote}! ❤️`;
+  battleButtons.forEach(btn => btn.disabled = true);
+}
+
+showBattleResults();
