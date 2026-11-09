@@ -90,8 +90,6 @@ function showFilm(title) {
 
   document.getElementById("filmDialog").showModal();
     }
-  
-}
 document.getElementById("filmSearch").addEventListener("input",renderFilms);
 document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
   document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));
