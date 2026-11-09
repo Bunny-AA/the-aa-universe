@@ -139,7 +139,7 @@
   width: 92vw;
   max-width: 650px;
   max-height: calc(100dvh - 24px);
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 #dialogContent {
