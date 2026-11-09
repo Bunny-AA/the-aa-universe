@@ -750,3 +750,94 @@
     height: 340px;
   }
   }
+
+/* =================================
+   AA UNIVERSE - CINEMATIC HERO FX
+================================= */
+
+.hero-copy {
+  animation: aaFadeUp 1s ease both;
+}
+
+.hero-art {
+  animation: aaFadeIn 1.4s ease both;
+}
+
+.hero h1 {
+  animation: aaTitleReveal 1.2s ease both;
+  text-shadow: 0 0 25px rgba(214, 173, 97, 0.12);
+}
+
+.hero h1 span {
+  color: #d6ad61;
+  text-shadow: 0 0 22px rgba(214, 173, 97, 0.3);
+}
+
+.hero-portrait {
+  animation: aaPortraitReveal 1.5s ease both;
+  transition: transform 0.6s ease;
+}
+
+.hero-frame:hover .hero-portrait {
+  transform: scale(1.045);
+}
+
+.hero-orbit {
+  animation: aaOrbitGlow 5s ease-in-out infinite alternate;
+}
+
+@keyframes aaFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aaFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes aaTitleReveal {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+    letter-spacing: 5px;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: normal;
+  }
+}
+
+@keyframes aaPortraitReveal {
+  from {
+    opacity: 0;
+    transform: scale(1.06);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes aaOrbitGlow {
+  from { opacity: 0.35; }
+  to { opacity: 0.85; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-copy,
+  .hero-art,
+  .hero h1,
+  .hero-portrait,
+  .hero-orbit {
+    animation: none !important;
+  }
+  }
+  
