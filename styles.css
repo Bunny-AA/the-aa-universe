@@ -1482,3 +1482,71 @@
   color: #c2b8a8 !important;
   line-height: 1.6;
     }
+/* ===== AA UNIVERSE - PREMIUM AWARDS WALL ===== */
+
+.awards-section {
+  background:
+    radial-gradient(ellipse at top, rgba(214,173,97,.13), transparent 60%),
+    #080809 !important;
+}
+
+.awards-section .awards-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px !important;
+}
+
+.awards-section .award-card {
+  position: relative !important;
+  min-height: 210px !important;
+  padding: 22px 15px !important;
+  overflow: hidden !important;
+  background: linear-gradient(145deg, #292015, #0b0a09 80%) !important;
+  border: 1px solid rgba(214,173,97,.55) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 12px 30px rgba(0,0,0,.55) !important;
+}
+
+.awards-section .award-card::after {
+  content: "✦";
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  color: rgba(214,173,97,.2);
+  font-size: 42px;
+}
+
+.awards-section .award-icon {
+  font-size: 30px !important;
+  margin-bottom: 15px;
+}
+
+.awards-section .award-card span {
+  color: #d6ad61 !important;
+  font-size: 9px !important;
+  letter-spacing: 1.5px;
+}
+
+.awards-section .award-card h3 {
+  color: #f3d49b !important;
+  font-size: 15px !important;
+  line-height: 1.4;
+}
+
+.awards-section .award-card p,
+.awards-section .award-card strong,
+.awards-section .award-card small {
+  color: #c2b8a8 !important;
+  line-height: 1.6;
+}
+
+.awards-section .award-featured {
+  border: 1px solid #e2bd72 !important;
+  box-shadow: 0 0 25px rgba(214,173,97,.15) !important;
+}
+
+@media(max-width:420px) {
+  .awards-section .awards-grid {
+    grid-template-columns: 1fr !important;
+  }
+  }
