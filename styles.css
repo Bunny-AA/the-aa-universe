@@ -1073,3 +1073,78 @@
   background: #8e202b !important;
   transform: scale(.9);
   }
+
+/* ===== AA LUXURY SPLIT MOVIE POPUP ===== */
+
+#filmDialog {
+  width: 94vw !important;
+  max-width: 680px !important;
+  padding: 42px 22px 28px !important;
+  background:
+    radial-gradient(ellipse at 12% 20%, rgba(214,173,97,.13), transparent 45%),
+    linear-gradient(145deg, #191614, #080809 80%) !important;
+  border: 1px solid #b99555 !important;
+  border-radius: 15px !important;
+}
+
+.movie-detail {
+  display: grid !important;
+  grid-template-columns: 38% 1fr !important;
+  gap: 20px !important;
+  align-items: center !important;
+}
+
+.movie-detail-poster {
+  width: 100% !important;
+  max-height: 52vh !important;
+  object-fit: cover !important;
+  border: 1px solid #c29b5c !important;
+  border-radius: 9px !important;
+  box-shadow: 0 0 25px rgba(214,173,97,.2) !important;
+}
+
+.movie-detail-info {
+  position: relative;
+  padding-left: 14px;
+  border-left: 2px solid #a77d3c;
+}
+
+.movie-detail-info .dialog-year {
+  color: #d6ad61 !important;
+  font-size: 10px !important;
+  letter-spacing: 2px !important;
+  font-weight: 800 !important;
+}
+
+.movie-detail-info .dialog-title {
+  color: #f5d69e !important;
+  font-size: clamp(22px, 5vw, 34px) !important;
+  line-height: 1.05 !important;
+  margin: 12px 0 !important;
+}
+
+.movie-detail-info .dialog-meta {
+  color: #d6ad61 !important;
+  font-weight: 600 !important;
+}
+
+.movie-detail-info > p:not(.dialog-meta) {
+  color: #e0dcd5 !important;
+  line-height: 1.6 !important;
+}
+
+.movie-detail-info .dialog-disclaimer {
+  color: #89847a !important;
+  font-size: 11px !important;
+}
+
+@media (max-width: 600px) {
+  .movie-detail {
+    grid-template-columns: 38% 1fr !important;
+    gap: 14px !important;
+  }
+
+  .movie-detail-info {
+    padding-left: 10px;
+  }
+  }
