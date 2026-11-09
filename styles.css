@@ -1666,3 +1666,50 @@
     grid-template-columns: 1fr !important;
   }
   }
+/* ===== AA CINEMA COLLECTION — LUXURY EDITION ===== */
+
+.film-card {
+  position: relative !important;
+  overflow: hidden !important;
+  background: linear-gradient(145deg,#211b15,#090909 75%) !important;
+  border: 1px solid rgba(214,173,97,.55) !important;
+  border-radius: 12px !important;
+  box-shadow:
+    0 12px 28px rgba(0,0,0,.65),
+    inset 0 1px rgba(255,255,255,.06) !important;
+  transition: transform .35s ease, box-shadow .35s ease,
+              border-color .35s ease !important;
+}
+
+.film-card:active {
+  transform: scale(.97) !important;
+  border-color: #e6c17c !important;
+  box-shadow: 0 0 22px rgba(214,173,97,.2) !important;
+}
+
+.film-poster {
+  overflow: hidden !important;
+  border-bottom: 2px solid #b58b49 !important;
+}
+
+.film-poster img {
+  transition: transform .6s ease, filter .6s ease !important;
+  filter: saturate(1.08) contrast(1.05) !important;
+}
+
+.film-card:active .film-poster img {
+  transform: scale(1.025) !important;
+}
+
+.film-info {
+  background: linear-gradient(180deg,#17120e,#090909) !important;
+}
+
+.film-info h3 {
+  color: #f3d49b !important;
+  letter-spacing: .3px;
+}
+
+.film-info p {
+  color: #b7aa99 !important;
+  }
