@@ -1448,3 +1448,37 @@
   font-size: 10px;
   margin-top: 20px;
   }
+/* ===== AA UNIVERSE - GOLDEN AWARDS WALL ===== */
+.awards-section {
+  background:
+    radial-gradient(ellipse at top, rgba(214,173,97,.12), transparent 60%),
+    #080809 !important;
+}
+
+.awards-section .award-card {
+  position: relative !important;
+  overflow: hidden !important;
+  padding: 25px 18px !important;
+  min-height: 190px !important;
+  background: linear-gradient(145deg, #292015, #0b0a09 75%) !important;
+  border: 1px solid rgba(214,173,97,.55) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 12px 30px rgba(0,0,0,.5) !important;
+}
+
+.awards-section .award-card::before {
+  content: "✦";
+  display: block;
+  color: #d6ad61;
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+
+.awards-section .award-card h3 {
+  color: #f3d49b !important;
+}
+
+.awards-section .award-card p {
+  color: #c2b8a8 !important;
+  line-height: 1.6;
+    }
