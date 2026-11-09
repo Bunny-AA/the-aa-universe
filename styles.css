@@ -1210,3 +1210,85 @@
   margin-top: 20px !important;
   padding-bottom: 15px !important;
   }
+/* ===== UPCOMING MOVIES - PREMIUM DESIGN ===== */
+
+.upcoming-section {
+  background: #080809 !important;
+  position: relative;
+}
+
+.upcoming-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.upcoming-card {
+  position: relative;
+  min-height: 250px;
+  padding: 22px 16px;
+  overflow: hidden;
+  border: 1px solid rgba(214,173,97,.45);
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at 90% 10%, rgba(214,173,97,.15), transparent 45%),
+    linear-gradient(145deg, #211b14, #090909 75%);
+  box-shadow: 0 12px 30px rgba(0,0,0,.5);
+}
+
+.upcoming-number {
+  color: rgba(214,173,97,.25);
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.upcoming-status {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 6px 9px;
+  color: #e5c88e;
+  border: 1px solid rgba(214,173,97,.4);
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+.upcoming-card h3 {
+  margin: 16px 0 8px;
+  color: #f3d49b;
+  font-size: clamp(20px, 5vw, 32px);
+  letter-spacing: 1px;
+}
+
+.upcoming-card p {
+  margin: 0 0 5px;
+  color: #a99b87;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+.upcoming-card strong {
+  color: #fff1d5;
+  font-size: 12px;
+}
+
+.upcoming-footer {
+  margin-top: 22px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(214,173,97,.25);
+  color: #d6ad61;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.upcoming-note {
+  margin-top: 20px;
+  color: #8e8578;
+  font-size: 11px;
+}
+
+@media(max-width: 420px) {
+  .upcoming-grid {
+    grid-template-columns: 1fr;
+  }
+}
