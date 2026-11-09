@@ -1021,3 +1021,55 @@
     gap: 22px !important;
   }
                                   }
+
+/* ===== LUXURY AA MOVIE POPUP ===== */
+
+#filmDialog {
+  background: linear-gradient(145deg, #211a16, #0b0b0d 75%) !important;
+  border: 1px solid #b99555 !important;
+  border-radius: 16px !important;
+  box-shadow:
+    0 0 0 1px rgba(214,173,97,.12),
+    0 20px 70px rgba(0,0,0,.85),
+    0 0 35px rgba(214,173,97,.12) !important;
+}
+
+#filmDialog::backdrop {
+  background: rgba(0,0,0,.88);
+  backdrop-filter: blur(9px);
+}
+
+.movie-detail-poster {
+  border: 1px solid rgba(214,173,97,.55);
+  box-shadow: 0 10px 30px rgba(0,0,0,.6);
+}
+
+.movie-detail-info .dialog-year {
+  color: #d6ad61 !important;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.movie-detail-info .dialog-title {
+  color: #f2d39b !important;
+  text-shadow: 0 0 18px rgba(214,173,97,.2);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+}
+
+.movie-detail-info .dialog-meta {
+  color: #d6ad61 !important;
+}
+
+.dialog-close {
+  color: #f3d49b !important;
+  background: rgba(214,173,97,.12) !important;
+  border: 1px solid rgba(214,173,97,.35) !important;
+  border-radius: 50%;
+  transition: .3s ease;
+}
+
+.dialog-close:active {
+  background: #8e202b !important;
+  transform: scale(.9);
+  }
