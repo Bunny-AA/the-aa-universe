@@ -1148,3 +1148,49 @@
     padding-left: 10px;
   }
   }
+
+/* ===== PREMIUM MOVIE CREDITS ===== */
+
+.movie-credits {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(214, 173, 97, 0.4);
+}
+
+.movie-credits div {
+  min-width: 0;
+  padding: 10px;
+  background: rgba(214, 173, 97, 0.06);
+  border: 1px solid rgba(214, 173, 97, 0.16);
+  border-radius: 7px;
+}
+
+.movie-credits span {
+  display: block;
+  color: #d6ad61;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.movie-credits strong {
+  display: block;
+  color: #f3e8d4;
+  font-size: 12px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .movie-credits {
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .movie-credits div {
+    padding: 8px;
+  }
+}
