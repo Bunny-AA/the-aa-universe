@@ -1365,3 +1365,86 @@
     grid-template-columns: 1fr !important;
   }
   }
+/* ===== AA BIOGRAPHY PREMIUM DESIGN ===== */
+
+.biography-section {
+  background: #080809 !important;
+}
+
+.bio-intro {
+  padding: 28px 22px;
+  margin: 25px 0;
+  border: 1px solid rgba(214,173,97,.45);
+  border-radius: 10px;
+  background: linear-gradient(145deg, #241d14, #0b0a09);
+}
+
+.bio-intro h3 {
+  color: #f3d49b;
+  font-size: 30px;
+  margin: 0 0 5px;
+  letter-spacing: 2px;
+}
+
+.bio-intro span {
+  color: #d6ad61;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.bio-intro p {
+  color: #c2b8a8;
+  line-height: 1.8;
+  font-size: 13px;
+  margin-top: 18px;
+}
+
+.bio-timeline {
+  position: relative;
+  margin: 35px 0;
+  padding-left: 25px;
+  border-left: 2px solid #b58b49;
+}
+
+.bio-item {
+  position: relative;
+  padding: 0 0 30px 20px;
+}
+
+.bio-item::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d6ad61;
+  box-shadow: 0 0 15px rgba(214,173,97,.5);
+}
+
+.bio-item > span {
+  color: #d6ad61;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.bio-item h3 {
+  color: #f3d49b;
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.bio-item p {
+  color: #aaa092;
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.bio-note {
+  color: #8e8578;
+  font-size: 10px;
+  margin-top: 20px;
+  }
