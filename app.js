@@ -54,9 +54,21 @@ function renderFilms(){
     card.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open();}});
   });
 }
+
 function showFilm(title) {
   const f = films.find(x => x.title === title);
   if (!f) return;
+
+  const credits = f.director ? `
+    <div class="movie-credits">
+      <div><span>DIRECTOR</span><strong>${f.director}</strong></div>
+      <div><span>PRODUCER</span><strong>${f.producer}</strong></div>
+      <div><span>MUSIC</span><strong>${f.music}</strong></div>
+      <div><span>PRODUCTION</span><strong>${f.production}</strong></div>
+      <div><span>RELEASE DATE</span><strong>${f.releaseDate}</strong></div>
+      <div><span>CAST</span><strong>${f.cast}</strong></div>
+    </div>
+  ` : "";
 
   document.getElementById("dialogContent").innerHTML = `
     <div class="movie-detail">
@@ -70,14 +82,15 @@ function showFilm(title) {
         <h2 class="dialog-title">${f.title}</h2>
         <p class="dialog-meta">${f.genre}</p>
         <p>${f.note}</p>
-        <p class="dialog-disclaimer">
-          Unofficial fan archive entry.
-        </p>
+        <p class="dialog-disclaimer">Unofficial fan archive entry.</p>
       </div>
     </div>
+    ${credits}
   `;
 
   document.getElementById("filmDialog").showModal();
+    }
+  
 }
 document.getElementById("filmSearch").addEventListener("input",renderFilms);
 document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
