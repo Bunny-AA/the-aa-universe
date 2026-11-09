@@ -957,3 +957,67 @@
     transition: none !important;
   }
 }
+
+/* AA UNIVERSE - VISIBLE CINEMA UPGRADE */
+
+.films-section {
+  background: #080809 !important;
+}
+
+.film-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+}
+
+.film-card {
+  background: linear-gradient(160deg, #24201c, #090909) !important;
+  border: 1px solid rgba(214, 173, 97, 0.55) !important;
+  border-radius: 9px !important;
+  overflow: hidden !important;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.65) !important;
+}
+
+.film-poster {
+  height: auto !important;
+  aspect-ratio: 2 / 3 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border-bottom: 2px solid #b58b49 !important;
+}
+
+.film-poster img {
+  object-fit: cover !important;
+  filter: contrast(1.08) saturate(1.12) !important;
+}
+
+.film-info {
+  padding: 13px 10px !important;
+  background: linear-gradient(180deg, #171310, #090909) !important;
+}
+
+.film-info h3 {
+  color: #f3d49b !important;
+  font-size: 14px !important;
+  line-height: 1.3 !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+.film-info p {
+  color: #b9aaa0 !important;
+  font-size: 10px !important;
+  line-height: 1.5 !important;
+}
+
+.film-card:active {
+  transform: scale(0.97) !important;
+  border-color: #f0c879 !important;
+}
+
+@media (min-width: 900px) {
+  .film-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+  }
+                                  }
