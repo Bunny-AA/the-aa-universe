@@ -1550,3 +1550,119 @@
     grid-template-columns: 1fr !important;
   }
   }
+/* ===== THE AA RECORDS — ORIGINAL LUXURY DESIGN ===== */
+
+.records-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 10% 20%, rgba(181,139,73,.12), transparent 40%),
+    radial-gradient(ellipse at 90% 80%, rgba(110,20,32,.13), transparent 42%),
+    #080809 !important;
+}
+
+.records-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px !important;
+  margin-top: 32px !important;
+}
+
+.record-card {
+  position: relative;
+  min-height: 210px;
+  padding: 20px 16px !important;
+  overflow: hidden;
+  border: 1px solid rgba(214,173,97,.35);
+  border-radius: 12px;
+  background: linear-gradient(145deg,#211c16,#0b0a0b 75%);
+  box-shadow: 0 14px 35px rgba(0,0,0,.55);
+  transition: transform .35s ease, border-color .35s ease;
+}
+
+.record-card::after {
+  content: "AA";
+  position: absolute;
+  right: -8px;
+  bottom: -20px;
+  font-size: 85px;
+  font-weight: 900;
+  color: rgba(214,173,97,.045);
+  pointer-events: none;
+}
+
+.record-card:active {
+  transform: scale(.97);
+  border-color: #e2bd72;
+}
+
+.record-index {
+  display: block;
+  color: #d6ad61;
+  font-size: 9px;
+  letter-spacing: 1.8px;
+  margin-bottom: 24px;
+}
+
+.record-card strong {
+  display: block;
+  color: #f3d49b;
+  font-size: clamp(30px, 8vw, 43px);
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-shadow: 0 0 20px rgba(214,173,97,.16);
+}
+
+.record-card h3 {
+  position: relative;
+  z-index: 1;
+  color: #fff0d4;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 12px 0 7px;
+}
+
+.record-card p {
+  position: relative;
+  z-index: 1;
+  color: #aaa092;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.record-red {
+  background: linear-gradient(145deg,#35151b,#0b090a 78%);
+  border-color: rgba(160,48,58,.55);
+}
+
+.record-red .record-index,
+.record-red strong {
+  color: #e0a0a0;
+}
+
+.record-3d {
+  background:
+    radial-gradient(circle at 90% 10%,rgba(214,173,97,.2),transparent 50%),
+    linear-gradient(145deg,#292015,#080809 80%);
+  box-shadow: inset 0 1px rgba(255,255,255,.07), 0 14px 35px rgba(0,0,0,.55);
+}
+
+.records-disclaimer {
+  margin-top: 22px;
+  color: #81796d;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+@media(min-width:800px) {
+  .records-grid {
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 20px !important;
+  }
+}
+
+@media(max-width:360px) {
+  .records-grid {
+    grid-template-columns: 1fr !important;
+  }
+  }
